@@ -1,0 +1,21 @@
+.navBarContainer {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+}
+.navBarContainer h3 {
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.navBarContainer ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 22px;
+  margin-right: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}

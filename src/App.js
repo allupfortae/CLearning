@@ -1,11 +1,15 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import QuickAcces from "./components/QuickAcces";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h3>Hello world</h3>
+      <Navbar />
+      <Home />
     </div>
   );
-}
+};
 
 export default App;

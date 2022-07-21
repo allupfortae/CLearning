@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import "./QuickAcces";
 
 const Navbar = () => {
   return (

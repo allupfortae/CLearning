@@ -1,8 +1,6 @@
 import React from "react";
 import "./SideCard.css";
 
-const Card = () => {
-  return <div className="Card"></div>;
-};
+const Card = () => {};
 
 export default Card;

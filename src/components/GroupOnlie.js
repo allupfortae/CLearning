@@ -14,7 +14,7 @@ const GroupOnlie = () => {
           <p className="text-gray-500 text-sm ">Catogery: Pintester</p>
           <p className="text-gray-500 text-sm">Ranking: 5 out 5</p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center mt-3 justify-around">
           <Groups />
           <Groups />
           <Groups />

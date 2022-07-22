@@ -1,12 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import Features from "./Features";
-
+import Logo from "../images/Logo3.png";
 const Navbar = () => {
   return (
     <div className=" relative  h-32">
       <div className=" ml-3 px-4 flex items-center mt-10">
-        <h1 className="text-3xl font-bold tracking-wide ">Central</h1>
+        <h1 className="font-bold text-3xl tracking-wide">Central</h1>
         <input
           className="ml-32 w-1/2 px-5 py-3 rounded-full outline outline-gray-500"
           type="text"

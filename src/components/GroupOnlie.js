@@ -3,8 +3,8 @@ import Groups from "./Groupson";
 
 const GroupOnlie = () => {
   return (
-    <div>
-      <div className="card h-62 w-5/6 ml-36 ">
+    <div className="w-1/2">
+      <div className="card h-62  ml-20 ">
         <h3 className=" text-2xl font-medium  text-left tracking-wide ml-1 px-4 py-4">
           Conntect with your group
         </h3>

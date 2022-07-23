@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="w-1/4 flex flex-col ">
       <img className="ml-10" src={Logo} alt="Central Logo" />
       <div className="flex flex-col items-center">
-        <button className="bg-blue-700 py-2 text-center  rounded-lg ml-4 text-white w-2/5 text-sm">
+        <button className="bg-blue-700 py-3 px-1 text-center  rounded-lg ml-4 text-white w-3/5 text-sm">
           Sign up for account
         </button>
 

@@ -32,15 +32,6 @@ const Home = () => {
         See why people that use central get hired right after, we have teamed
         with 30,000+ compaines
       </p>
-      <div className="mt-8 h-64 w-full flex ">
-        <div className="flex gap-2">
-          <FooterList />
-          <FooterList />
-          <FooterList />
-          <FooterList />
-        </div>
-        <Footer />
-      </div>
     </div>
   );
 };

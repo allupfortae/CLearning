@@ -5,7 +5,7 @@ import Math from "../images/math.webp";
 const FeaturedBooks = () => {
   return (
     <div className="flex flex-col gap-2 ml-5 mt-8">
-      <img className="booksImg ml-3" src={Java} alt="Javabook" />
+      <img className="booksImg ml-3" src={Math} alt="Javabook" />
       <p className="font-bold w-52 text-sm text-center">
         Learn JavaScript Quickly: A Beginner Guide Hands On Expirement
       </p>

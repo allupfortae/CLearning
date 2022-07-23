@@ -11,3 +11,7 @@ li:hover {
 button:hover {
   background-color: #314f7f;
 }
+* {
+  margin: 0;
+  padding: 0;
+}

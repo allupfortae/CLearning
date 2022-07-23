@@ -5,6 +5,8 @@ import Continue from "./Continue";
 import ExplorePlans from "./ExplorePlans";
 import Jobs from "./Jobs";
 import Books from "./Books";
+import About from "./About";
+import Qutoes from "./Qutoes";
 
 const Home = () => {
   return (
@@ -13,11 +15,17 @@ const Home = () => {
         <GroupsOnline />
         <Continue />
       </div>
-      <div className="container">
+      <div>
         <ExplorePlans />
         <Jobs />
       </div>
       <Books />
+      <div className="flex">
+        <About />
+      </div>
+      <div className="mt-14 h-56 quotes ">
+        <Qutoes />
+      </div>
     </div>
   );
 };

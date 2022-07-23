@@ -23,3 +23,12 @@
   width: 195px;
   height: 210px;
 }
+.centralLogo {
+  object-fit: cover;
+  object-position: center;
+}
+
+.Certifications {
+  width: 195px;
+  height: 210px;
+}

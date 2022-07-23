@@ -10,9 +10,9 @@ const GroupOnlie = () => {
         </h3>
 
         <div className="flex ml-4 gap-3">
-          <p className=" text-gray-500 text-sm ">Group Name: EthicalJack</p>
-          <p className="text-gray-500 text-sm ">Catogery: Pintester</p>
-          <p className="text-gray-500 text-sm">Ranking: 5 out 5</p>
+          <p className=" text-gray-500 text-sm  ">Group Name: EthicalJack</p>
+          <p className="text-gray-500    text-sm ">Catogery: Pintester</p>
+          <p className="text-gray-500   text-sm">Ranking: 5 out 5</p>
         </div>
         <div className="flex items-center mt-3 justify-around">
           <Groups />
@@ -21,9 +21,9 @@ const GroupOnlie = () => {
           <Groups />
         </div>
         <div className="flex items-center justify-around pb-2 pt-1 text-gray-500 font-medium mt-3">
-          <p>Group chat</p>
-          <p>Challenges</p>
-          <p>Projects</p>
+          <p className="cursor-pointer hover:text-blue-700">Group chat</p>
+          <p className="cursor-pointer hover:text-blue-700 ">Challenges</p>
+          <p className=" cursor-pointer hover:text-blue-700">Projects</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import FeaturedBooks from "./FeaturedBooks";
+import Exam from "./Exams";
+import About from "./About";
 
 const Books = () => {
   return (
@@ -28,6 +30,9 @@ const Books = () => {
         <FeaturedBooks />
         <FeaturedBooks />
         <FeaturedBooks />
+      </div>
+      <div>
+        <Exam />
       </div>
     </div>
   );

@@ -5,3 +5,9 @@
 li:hover {
   color: #3c82f6;
 }
+.icons:hover {
+  color: #3c82f6;
+}
+button:hover {
+  background-color: #314f7f;
+}

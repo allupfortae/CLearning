@@ -7,6 +7,8 @@ import Jobs from "./Jobs";
 import Books from "./Books";
 import About from "./About";
 import Qutoes from "./Qutoes";
+import Footer from "./Footer";
+import FooterList from "./FooterList";
 
 const Home = () => {
   return (
@@ -25,6 +27,19 @@ const Home = () => {
       </div>
       <div className="mt-14 h-56 quotes ">
         <Qutoes />
+      </div>
+      <p className="mt-14 text-3xl font-semibold ml-4">
+        See why people that use central get hired right after, we have teamed
+        with 30,000+ compaines
+      </p>
+      <div className="mt-8 h-64 w-full flex ">
+        <div className="flex gap-2">
+          <FooterList />
+          <FooterList />
+          <FooterList />
+          <FooterList />
+        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const Qutoes = () => {
     <div className="">
       <div className="">
         <h1 className="text-3xl font-medium ml-20 text-white pt-10 tracking-wide">
-          Always stay focus no matter how hard it is
+          Always stay focus no matter how hard it's gets
         </h1>
         <p className="text-white text-lg font-light ml-20 mt-4 w-3/5">
           Reading motivation quotes could always put you into a better mood and

@@ -1,16 +1,31 @@
 import React from "react";
+import { AiOutlineMinus } from "react-icons/ai";
 
 const PlansCards = () => {
   return (
-    <div className="mt-10 flex flex-col gap-20  ml-10 container ">
-      <div className="mt-10 border border-black h-{240px}">
-        <h1 className="font-semibold text-lg ">Basic Plan</h1>
+    <div className="mt-10 flex justify-center gap-40 items-center  ml-10 container mb-20">
+      {/* Basic Plan */}
+      <div className="w-1/5 border text-lg border-black h-96 py-4 px-3 rounded-md ">
+        <h1 className="font-semibold ml-4 text-center  text-xl ">
+          Basic Plan&mdash;
+        </h1>
+        <p>$10.50</p>
+        <p>Month</p>
+        <p>Joining an Group</p>
+        <p>3 new books a month</p>
+        <p>1 exam certification</p>
+        <p>Unlimited Classes</p>
+        <button>Subscribe</button>
       </div>
-      <div className="h-{240px} border border-blue-700">
-        <h1 className="font-semibold text-lg">Standard Plan</h1>
+
+      {/* Standard Plan */}
+      <div className="w-1/5 border-2 text-lg border-blue-700 h-96 py-4 rounded-md">
+        <h1 className="font-semibold ml-4 text-xl">Standard Plan</h1>
       </div>
-      <div className="h-{240px} border border-black">
-        <h1 className="font-semibold text-lg">Premium Plan</h1>
+
+      {/* Premium Plan */}
+      <div className="w-1/5 border text-lg border-black h-96 py-4 rounded-md">
+        <h1 className="font-semibold ml-4 text-xl">Premium Plan</h1>
       </div>
     </div>
   );

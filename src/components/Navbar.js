@@ -14,15 +14,15 @@ const Navbar = () => {
         <Link to="/">
           <img className="centralLogo" src={Logo} alt="Central" />
         </Link>
-        <p className="text-lg font-light text-gray-500 absolute top-5 left-80 translate-x-2 translate-y-3 mr-3">
+        <p className="text-lg font-light text-gray-500 absolute top-5 left-80 translate-x-2 translate-y-3 mr-4">
           <FaSearch />
         </p>
         <input
-          className=" w-1/2 px-8 py-4 rounded-full outline outline-gray-500 text-xl"
+          className=" w-1/2 px-9 py-4 rounded-full outline outline-gray-500 text-base"
           type="text"
           placeholder="Search for anything"
         />
-        <div className="flex items-center gap-4  text-sm text-gray-500 font-bold tracking tracking-wide cursor-pointer ">
+        <div className="flex items-center gap-4  text-sm text-gray-500 font-medium tracking tracking-wide cursor-pointer ">
           <p className="hover:text-blue-700">Groups</p>
           <Link to="/plans" className="hover:text-blue-700">
             Plans

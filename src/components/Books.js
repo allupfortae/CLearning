@@ -1,7 +1,5 @@
-import React from "react";
 import FeaturedBooks from "./FeaturedBooks";
 import Exam from "./Exams";
-import About from "./About";
 
 const Books = () => {
   return (

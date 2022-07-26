@@ -1,14 +1,14 @@
 import React from "react";
-import Plans from "../components/Plans";
+import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FooterList from "../components/FooterList";
 
-const PlansPage = () => {
+const LoggedinPage = () => {
   return (
     <div>
       <Navbar />
-      <Plans />
+      <Home />
       <div className="mt-8 h-64 w-full flex ">
         <div className="flex gap-2">
           <FooterList />
@@ -22,4 +22,4 @@ const PlansPage = () => {
   );
 };
 
-export default PlansPage;
+export default LoggedinPage;

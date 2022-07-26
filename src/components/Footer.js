@@ -6,7 +6,6 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import FooterList from "./FooterList";
 import { FiMail } from "react-icons/fi";
 
 const Footer = () => {

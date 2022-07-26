@@ -1,13 +1,12 @@
 import React from "react";
-import "./Navbar.css";
-import Features from "./Features";
-import Logo from "../images/Central.png";
+import { Link } from "react-router-dom";
+import Logo from "../../images/Central.png";
 import { FaSearch } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 import { RiArrowDownSFill, RiLinksFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import Features from "../Features";
 
-const Navbar = () => {
+const Navbarsignup = () => {
   return (
     <div className=" relative  h-32">
       <div className=" justify-evenly flex items-center mt-10 ">
@@ -22,28 +21,23 @@ const Navbar = () => {
           type="text"
           placeholder="Search for anything"
         />
-        <div className="flex items-center gap-4  text-sm text-gray-500 font-medium tracking tracking-wide cursor-pointer ">
-          <Link to="/signup">
+        <div className="flex items-center gap-4  text-sm text-gray-500 font-medium tracking tracking-wide cursor-pointer ml-3">
+          <Link to="">
             <p className="hover:text-blue-700">Groups</p>
           </Link>
           <Link to="/plans" className="hover:text-blue-700">
             Plans
           </Link>
-          <p className="hover:text-blue-700"> My learing</p>
+          <p className="hover:text-blue-700"> Publish</p>
         </div>
 
-        <div className="ml-10  text-base flex font-medium ">
-          <div className="flex gap-2 items-center">
-            <p className="text-black text-sm cursor-pointer">
-              <FaPlus />
-            </p>
-            <p className="text-black text-sm mr-1 cursor-pointer">
-              <RiArrowDownSFill />
-            </p>
-          </div>
-          <span className="rounded-full items-center  text-white px-4 py-2  text-lg font-bold bg-blue-500 ml-2 cursor-pointer">
-            A
-          </span>
+        <div className="ml-10 gap-1  flex font-semibold text-sm mr-3">
+          <button className="px-4 py-3 border border-black hover:bg-blue-700 hover:text-white ">
+            Log in
+          </button>
+          <button className="text-white bg-black px-4 py-3 hover:bg-blue-700">
+            Sign up
+          </button>
         </div>
       </div>
       <Features />
@@ -51,4 +45,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbarsignup;

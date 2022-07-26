@@ -1,6 +1,7 @@
+import React from "react";
 import FeaturedBooks from "./FeaturedBooks";
 import Exam from "./Exams";
-import { data } from "autoprefixer";
+import bookdatas from "./Data/BookData";
 
 const Books = () => {
   return (
@@ -23,12 +24,35 @@ const Books = () => {
           More
         </a>
       </div>
-      <div className="container grid grid-cols-5  gap-5 ml-10">
-        <FeaturedBooks />
-        <FeaturedBooks />
-        <FeaturedBooks />
-        <FeaturedBooks />
-        <FeaturedBooks />
+      <div className="grid grid-cols-4  gap-10 ml-10">
+        <FeaturedBooks
+          id={bookdatas[0].id}
+          img={require("../images/cyberattacks.jpg")}
+          desc={bookdatas[0].desc}
+          auth={bookdatas[0].auth}
+          ratings={bookdatas[0].ratings}
+        />
+        <FeaturedBooks
+          id={bookdatas[1].id}
+          img={require("../images/math.webp")}
+          desc={bookdatas[1].desc}
+          auth={bookdatas[1].auth}
+          ratings={bookdatas[1].ratings}
+        />
+        <FeaturedBooks
+          id={bookdatas[2].id}
+          img={require("../images/science.webp")}
+          desc={bookdatas[2].desc}
+          auth={bookdatas[2].auth}
+          ratings={bookdatas[2].ratings}
+        />
+        <FeaturedBooks
+          id={bookdatas[3].id}
+          img={require("../images/LinkedIn.jpg")}
+          desc={bookdatas[3].desc}
+          auth={bookdatas[3].auth}
+          ratings={bookdatas[3].ratings}
+        />
       </div>
       <div>
         <Exam />

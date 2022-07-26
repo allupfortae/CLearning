@@ -17,7 +17,7 @@ const Exams = () => {
         </a>
       </div>
 
-      <div className="grid grid-cols-4  p-3">
+      <div className="grid grid-cols-4 p-3">
         <Certifications />
         <Certifications />
         <Certifications />

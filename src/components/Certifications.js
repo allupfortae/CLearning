@@ -3,7 +3,7 @@ import Aws from "../images/awscertifications.png";
 
 function Certifications() {
   return (
-    <div className="mt-6  mr-20 ">
+    <div className="mt-6  ">
       <img
         className="Certifications  ml-11 "
         src={Aws}

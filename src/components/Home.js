@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+
 import GroupsOnline from "./GroupOnlie";
 import Continue from "./Continue";
 import ExplorePlans from "./ExplorePlans";
@@ -7,8 +7,6 @@ import Jobs from "./Jobs";
 import Books from "./Books";
 import About from "./About";
 import Qutoes from "./Qutoes";
-import Footer from "./Footer";
-import FooterList from "./FooterList";
 
 const Home = () => {
   return (

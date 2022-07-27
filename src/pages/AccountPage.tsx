@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FooterList from "../components/FooterList";
 
-const LoggedinPage = () => {
+const AccountPage = ({ firstletter, name, data, letter }) => {
   return (
     <div>
-      <Navbar />
-      <Home />
+      <Navbar name={name} letter={letter} />
+      <Home firstletter={firstletter} data={data} letter={letter} />
       <div className="mt-8 h-64 w-full flex ">
         <div className="flex gap-2">
           <FooterList />
@@ -22,4 +22,4 @@ const LoggedinPage = () => {
   );
 };
 
-export default LoggedinPage;
+export default AccountPage;

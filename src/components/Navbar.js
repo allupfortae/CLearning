@@ -7,7 +7,7 @@ import { FaPlus } from "react-icons/fa";
 import { RiArrowDownSFill, RiLinksFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ letter, name }) => {
   return (
     <div className=" relative  h-32">
       <div className=" justify-evenly flex items-center mt-10 ">
@@ -42,11 +42,15 @@ const Navbar = () => {
             </p>
           </div>
           <span className="rounded-full items-center  text-white px-4 py-2  text-lg font-bold bg-blue-500 ml-2 cursor-pointer">
-            A
+            {letter}
           </span>
         </div>
       </div>
+
       <Features />
+      <div className="text-3xl font-semibold mt-5 ml-24 mb-12">
+        Nice to see you, {name}
+      </div>
     </div>
   );
 };

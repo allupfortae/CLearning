@@ -1,6 +1,7 @@
 import React from "react";
+import GroupOnlie from "./GroupOnlie";
 
-const Features = () => {
+const Features = ({ firstletter }) => {
   return (
     <div>
       <div className="card2 mt-7 h-10 ">

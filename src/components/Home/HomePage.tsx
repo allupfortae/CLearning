@@ -1,10 +1,9 @@
 import React from "react";
-import Signup from "./Signup";
+import SignupPage from "./SIgnupPage.js";
 import Navbarsignup from "./Navbarsignup";
 import Footersignup from "./Footersignup";
 import HomeFeatures from "../Home/HomeFeatures";
 import HomeList from "./HomeList";
-import userdata from "../Data/UserData";
 
 const HomePage = () => {
   return (
@@ -18,7 +17,7 @@ const HomePage = () => {
         Learn in groups and work on real world projects
       </h1>
       <div className="flex items-center justify-center">
-        <Signup />
+        <SignupPage />
       </div>
       <HomeFeatures />
       <HomeList />

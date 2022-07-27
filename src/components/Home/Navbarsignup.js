@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/Central.png";
 import { FaSearch } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa";
-import { RiArrowDownSFill, RiLinksFill } from "react-icons/ri";
 import Features from "../Features";
 
 const Navbarsignup = () => {
@@ -13,7 +11,7 @@ const Navbarsignup = () => {
         <Link to="/home">
           <img className="centralLogo" src={Logo} alt="Central" />
         </Link>
-        <p className="text-lg font-light text-gray-500 absolute top-5 left-80 translate-x-2 translate-y-3 mr-4">
+        <p className="text-lg font-light text-gray-500 absolute top-5 left-80 -translate-x-5 translate-y-3 mr-4">
           <FaSearch />
         </p>
         <input
@@ -32,12 +30,19 @@ const Navbarsignup = () => {
         </div>
 
         <div className="ml-10 gap-1  flex font-semibold text-sm mr-3">
-          <button className="px-4 py-3 border border-black hover:bg-blue-700 hover:text-white ">
+          <Link
+            to="/"
+            Link
+            className="px-4 py-3 border border-black hover:bg-blue-700 hover:text-white "
+          >
             Log in
-          </button>
-          <button className="text-white bg-black px-4 py-3 hover:bg-blue-700">
+          </Link>
+          <Link
+            to="/login"
+            className="text-white bg-black px-4 py-3 hover:bg-blue-700"
+          >
             Sign up
-          </button>
+          </Link>
         </div>
       </div>
       <Features />

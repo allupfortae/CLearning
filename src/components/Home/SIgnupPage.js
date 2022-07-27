@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import userdata from "../Data/UserData";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [firsname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
   const [password, setPassword] = useState("");
+  const [username, setUserName] = useState("");
+  const navigate = useNavigate();
 
   const SignupHandler = (event) => {
     event.preventDefault();
@@ -13,14 +15,8 @@ const Signup = () => {
     setFirstName("");
     setLastName("");
     setPassword("");
-    const data = userdata.push({
-      id: 2,
-      email: setEmail,
-      firstname: setFirstName,
-      lastname: setLastName,
-      password: setPassword,
-    });
-    console.log(data);
+    setUserName("");
+    navigate("/loggedin");
   };
 
   return (
@@ -33,8 +29,16 @@ const Signup = () => {
         <input
           className="forms"
           type="text"
+          placeholder="Username"
+          onChange={(e) => setUserName(e.target.value)}
+          value={username}
+        />
+
+        <input
+          className="forms"
+          type="text"
           placeholder="First name"
-          onChange={(event) => setFirstName(event.target.value)}
+          onChange={(e) => setFirstName(e.target.value)}
           value={firsname}
         />
 
@@ -42,7 +46,7 @@ const Signup = () => {
           className="forms"
           type="text"
           placeholder="Last name"
-          onChange={(event) => setLastName(event.target.value)}
+          onChange={(e) => setLastName(e.target.value)}
           value={lastname}
         />
 
@@ -50,15 +54,15 @@ const Signup = () => {
           className="forms"
           type="email"
           placeholder="Email"
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
 
         <input
           className="forms"
-          type="text"
+          type="password"
           placeholder="Password"
-          onChange={(event) => setPassword(event.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
         <p className="text-sm ">

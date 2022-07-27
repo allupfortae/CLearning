@@ -8,11 +8,11 @@ import Books from "./Books";
 import About from "./About";
 import Qutoes from "./Qutoes";
 
-const Home = () => {
+const Home = ({ firstletter, data, letter }) => {
   return (
     <div className="mt-10">
       <div className=" container flex items-center gap-4 h-72  w-full z-0">
-        <GroupsOnline />
+        <GroupsOnline firstletter={firstletter} data={data} letter={letter} />
         <Continue />
       </div>
       <div>

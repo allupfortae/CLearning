@@ -15,6 +15,7 @@ const AccountPage = (props) => {
         inGroup={props.inGroup}
         inClasses={props.inClasses}
         status={props.status}
+        hoster={props.hoster}
       />
       <div className="mt-8 h-64 w-full flex ">
         <div className="flex gap-2">

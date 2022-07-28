@@ -3,10 +3,6 @@ import GroupsOnline from "./GroupOnlie";
 import LastViewClass from "./LastViewClasses";
 import ExplorePlans from "./ExplorePlans";
 import Jobs from "./Jobs";
-import Books from "./Books";
-import About from "./About";
-import Qutoes from "./Qutoes";
-
 const Home = (props) => {
   return (
     <div className="mt-10">
@@ -17,6 +13,7 @@ const Home = (props) => {
           fsName={props.fsName}
           inGroup={props.inGroup}
           status={props.status}
+          hoster={props.hoster}
         />
         <LastViewClass inClasses={props.inClasses} />
       </div>
@@ -24,13 +21,8 @@ const Home = (props) => {
         <ExplorePlans />
         <Jobs />
       </div>
-      <Books />
-      <div className="flex">
-        <About />
-      </div>
-      <div className="mt-14 h-56 quotes ">
-        <Qutoes />
-      </div>
+      <div className="flex"></div>
+      <div className="mt-14 h-56 quotes "></div>
       <p className="mt-14 text-3xl font-semibold ml-4">
         See why people that use central get hired right after, we have teamed
         with 30,000+ compaines

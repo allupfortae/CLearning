@@ -23,13 +23,13 @@ const Navbar = (props) => {
           placeholder="Search for anything"
         />
         <div className="flex items-center gap-4  text-sm text-gray-500 font-medium tracking tracking-wide cursor-pointer ">
-          <Link to="/signup">
+          <Link to="/groups">
             <p className="hover:text-blue-500">Groups</p>
           </Link>
           <Link to="/plans" className="hover:text-blue-500">
             Plans
           </Link>
-          <p className="hover:text-blue-500"> My learing</p>
+          <p className="hover:text-blue-500"> Problems</p>
         </div>
 
         <div className="ml-10  text-base flex font-medium ">
@@ -49,9 +49,6 @@ const Navbar = (props) => {
       </div>
 
       <Features />
-      <div className="text-3xl font-semibold mt-5 ml-24 mb-12">
-        Nice to see you, {props.userName}
-      </div>
     </div>
   );
 };

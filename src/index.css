@@ -58,7 +58,8 @@ body {
 
 .Certifications {
   cursor: pointer;
-  height: 210px;
+  height: 140px;
+  width: 200px;
 }
 
 .booksImg:hover {

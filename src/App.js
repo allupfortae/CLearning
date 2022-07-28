@@ -12,6 +12,13 @@ const App = () => {
       firstname: "Avantae",
       lastname: "jackson",
       password: "alkmql",
+      ingroup: true,
+      inclasses: true,
+      status: true,
+      groupname: "EthicalHacker",
+      catogery: "",
+      groupranking: "",
+      host: true,
     },
     {
       id: 1,
@@ -20,6 +27,13 @@ const App = () => {
       firstname: "Jacksom",
       lastname: "jackson",
       password: "alkmql",
+      ingroup: true,
+      inclasses: true,
+      status: true,
+      groupname: "EthicalHacker",
+      catogery: "",
+      groupranking: "",
+      host: false,
     },
   ];
 
@@ -31,10 +45,13 @@ const App = () => {
           path="/loggedin"
           element={
             <AccountPage
-              data={userdata}
-              firstletter={userdata[0].firstname.charAt(0)}
-              letter={userdata[(0, 1)].firstname.charAt(0)}
-              name={userdata[0].firstname}
+              id={userdata[0].id}
+              fName={userdata[0].firstname.charAt(0)}
+              userName={userdata[0].username}
+              inGroup={userdata[0].ingroup}
+              inClasses={userdata[0].inclasses}
+              status={userdata[0].status}
+              fsName={userdata[1].firstname.charAt(0)}
             />
           }
         />

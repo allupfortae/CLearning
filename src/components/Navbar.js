@@ -4,14 +4,14 @@ import Features from "./Features";
 import Logo from "../images/Central.png";
 import { FaSearch } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
-import { RiArrowDownSFill, RiLinksFill } from "react-icons/ri";
+import { RiArrowDownSFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ letter, name }) => {
+const Navbar = (props) => {
   return (
     <div className=" relative  h-32">
       <div className=" justify-evenly flex items-center mt-10 ">
-        <Link to="/home">
+        <Link to="/loggedin">
           <img className="centralLogo" src={Logo} alt="Central" />
         </Link>
         <p className="text-lg font-light text-gray-500 absolute top-5 left-80 translate-x-2 translate-y-3 mr-4">
@@ -24,12 +24,12 @@ const Navbar = ({ letter, name }) => {
         />
         <div className="flex items-center gap-4  text-sm text-gray-500 font-medium tracking tracking-wide cursor-pointer ">
           <Link to="/signup">
-            <p className="hover:text-blue-700">Groups</p>
+            <p className="hover:text-blue-500">Groups</p>
           </Link>
-          <Link to="/plans" className="hover:text-blue-700">
+          <Link to="/plans" className="hover:text-blue-500">
             Plans
           </Link>
-          <p className="hover:text-blue-700"> My learing</p>
+          <p className="hover:text-blue-500"> My learing</p>
         </div>
 
         <div className="ml-10  text-base flex font-medium ">
@@ -41,15 +41,16 @@ const Navbar = ({ letter, name }) => {
               <RiArrowDownSFill />
             </p>
           </div>
+
           <span className="rounded-full items-center  text-white px-4 py-2  text-lg font-bold bg-blue-500 ml-2 cursor-pointer">
-            {letter}
+            {props.fName}
           </span>
         </div>
       </div>
 
       <Features />
       <div className="text-3xl font-semibold mt-5 ml-24 mb-12">
-        Nice to see you, {name}
+        Nice to see you, {props.userName}
       </div>
     </div>
   );

@@ -4,11 +4,18 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FooterList from "../components/FooterList";
 
-const AccountPage = ({ firstletter, name, data, letter }) => {
+const AccountPage = (props) => {
   return (
     <div>
-      <Navbar name={name} letter={letter} />
-      <Home firstletter={firstletter} data={data} letter={letter} />
+      <Navbar id={props.id} fName={props.fName} userName={props.userName} />
+      <Home
+        id={props.id}
+        fName={props.fName}
+        fsName={props.fsName}
+        inGroup={props.inGroup}
+        inClasses={props.inClasses}
+        status={props.status}
+      />
       <div className="mt-8 h-64 w-full flex ">
         <div className="flex gap-2">
           <FooterList />

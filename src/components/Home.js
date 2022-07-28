@@ -1,19 +1,24 @@
 import React from "react";
-
 import GroupsOnline from "./GroupOnlie";
-import Continue from "./Continue";
+import LastViewClass from "./LastViewClasses";
 import ExplorePlans from "./ExplorePlans";
 import Jobs from "./Jobs";
 import Books from "./Books";
 import About from "./About";
 import Qutoes from "./Qutoes";
 
-const Home = ({ firstletter, data, letter }) => {
+const Home = (props) => {
   return (
     <div className="mt-10">
       <div className=" container flex items-center gap-4 h-72  w-full z-0">
-        <GroupsOnline firstletter={firstletter} data={data} letter={letter} />
-        <Continue />
+        <GroupsOnline
+          id={props.id}
+          fName={props.fName}
+          fsName={props.fsName}
+          inGroup={props.inGroup}
+          status={props.status}
+        />
+        <LastViewClass inClasses={props.inClasses} />
       </div>
       <div>
         <ExplorePlans />
